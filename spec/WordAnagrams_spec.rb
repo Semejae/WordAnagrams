@@ -17,6 +17,15 @@ describe('#split') do
   end
 end
 
+describe('#vowel_check?') do
+  it('will return true if the string contains a vowel, else returns false') do
+    anagram = Words.new('ruby','bury')
+    not_words = Words.new('rb', 'br')
+    expect(anagram.vowel_check?).to(eq(true))
+    expect(not_words.vowel_check?).to(eq(false))
+  end
+end
+
 
 
 

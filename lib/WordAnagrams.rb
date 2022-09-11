@@ -21,5 +21,15 @@ class Words
     return false
   end
 
+  def anti_gram_check?()
+    @string1.each do |letter|
+      if @string2.include?(letter)
+        return false
+      end
+    end
+    return true
+  end
   
+
+
 end

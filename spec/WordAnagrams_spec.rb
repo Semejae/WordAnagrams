@@ -10,9 +10,9 @@ describe(Words) do
     end
   end
 
-  describe('#split') do 
+  describe('#split')do
     it ('will use a long chain of methods to change the given string into an alphabetical array with no spaces or punctuation and is lowercase') do
-      object = Words.new('is a sentence!', 'ruby')
+      object = Words.new('Is a sentence!','ruby')
       expect(object.string1).to(eq(["a", "c", "e", "e", "e", "i", "n", "n", "s", "s", "t"]))
     end
   end
